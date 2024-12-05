@@ -39,6 +39,7 @@ const Home = () => {
                       <td>{patient.firstName}</td>
                       <td>{patient.lastName}</td>
                       <td>{patient.age}</td>
+                      <td><Link to={`/addClinicals/${patient.id}`}>Add Clinical Data</Link></td>
                   </tr>
               ))}
               </tbody>

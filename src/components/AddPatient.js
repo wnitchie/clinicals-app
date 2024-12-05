@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import {Link} from "react-router-dom";
 
 const AddPatient = () => {
   const [firstName, setFirstName] = useState('');
@@ -56,7 +57,7 @@ const AddPatient = () => {
         </div>
         <button type="submit">Add Patient</button>
       </form>
-      {message && <p>{message}</p>}
+      <Link to="/">Back to Home</Link>
     </div>
   );
 };
